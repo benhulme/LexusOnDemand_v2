@@ -1,0 +1,24 @@
+<div class="car-features-wrapper">
+  <div class="car-features-container">
+
+    <!-- <div class="arrow-container prev-container"><img class='prev' src='/assets/images/prev.png'></div> -->
+
+    <div id="car-features-carousel">
+      <div *ngFor="let feature of car.featureContent; let i=index">
+        <div class="slick-slide-item">      
+          <img class="car-features-image" src="{{ feature.featureImagePath }}"> 
+          <div class="select-car-main-details">
+            <h4>{{ feature.featureHeading }}</h4>
+            <div class="carousel-copy-container">
+              <p>{{ feature.featureCopy }}</p>
+            </div>
+            <h4 *ngIf="i == 0" class="feature-price">{{ car.modelPrice }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="arrow-container next-container"><img class='next' src='/assets/images/next.png'></div> -->
+
+  </div>
+ </div> 

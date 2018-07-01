@@ -1,0 +1,27 @@
+@import "../variables.scss";
+.header-container {
+  height: 60px;
+  margin: 0 auto;
+  background-color: $background_color;
+  color: $font-color;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  .back-section {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  .logo-section {
+    max-width: 100px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  .menu-section {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}

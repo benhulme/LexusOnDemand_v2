@@ -1,0 +1,14 @@
+<div class="select-car-wrapper">
+  <div class="select-car-container">
+    <div *ngFor="let car of cars" class="car-item-container">
+      <div class="car-item-header">
+        <img src="{{ car.mainImagePath }}" alt="{{ car.model }}">
+      </div>
+      <div class="car-item-details">
+        <p>{{ car.mainHeading }}</p>
+        <div class="view-car-features" (click)="selectCarModel(car.id)">See {{ car.shortModel }} Features</div>
+        <div class="select-car-btn">SELECT {{ car.model }}</div>
+      </div>
+    </div>
+  </div>
+</div>
