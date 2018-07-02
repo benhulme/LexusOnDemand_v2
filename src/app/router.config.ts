@@ -10,6 +10,7 @@ import { ThankYouComponent } from "./thank-you/thank-you.component";
 import { SelectLocationComponent } from "./select-location/select-location.component";
 import { SelectDateAndTimeComponent } from "./select-date-and-time/select-date-and-time.component";
 import { EnterYourDetailsComponent } from "./enter-your-details/enter-your-details.component";
+import { LexusToYouComponent } from "./lexus-to-you/lexus-to-you.component";
 
 export const routerConfig: Route[] = [
   { path: '', redirectTo: 'select-car', pathMatch: 'full' },
@@ -24,5 +25,6 @@ export const routerConfig: Route[] = [
   { path: 'select-date-and-time', component: SelectDateAndTimeComponent },
   { path: 'enter-your-details', component: EnterYourDetailsComponent },
   { path: 'thank-you', component: ThankYouComponent },
+  { path: 'lexus-to-you', component: LexusToYouComponent },
   { path: '**', redirectTo: 'select-car' }
 ]

@@ -22,13 +22,8 @@ export class LexusIsFeaturesComponent implements OnInit {
   ngOnInit() {
     this.setBackgroundContext('alt');
     this.car = this.carService.getCarById(this.carId);
-    this.checkStoredCar();
+    this.carPrice = this.car.modelPrice;
     this.initSlick();
-  }
-
-  checkStoredCar(){
-    if(this._['selectedCarPrice'] == '')
-      this.storeSelectedCar()
   }
   
   initSlick() {
@@ -45,18 +40,6 @@ export class LexusIsFeaturesComponent implements OnInit {
       });
     })
   }
-
-  storeSelectedCar() {
-    this._['selectedCar'] = this.car.model;
-    this._['selectedCarId'] = this.car.id;
-    this._['selectedCarPrice'] = this.car.modelPrice;
-  }
-
-
-
-
-
-
 
   /**
    * Repeated function to update core bg color based on viewed component

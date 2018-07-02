@@ -28,6 +28,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
 
 /* SERVICES */
 import { CarService } from './shared/model/car.service';
+import { LexusToYouComponent } from './lexus-to-you/lexus-to-you.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CarService } from './shared/model/car.service';
     SelectDateAndTimeComponent,
     EnterYourDetailsComponent,
     ThankYouComponent,
+    LexusToYouComponent,
   ],
   imports: [
     BrowserModule,

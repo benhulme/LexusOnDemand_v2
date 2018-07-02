@@ -1,5 +1,6 @@
 <div class="header-container">
-  <div class="back-section" (click)="back()">BACK</div>
+  <div *ngIf="hasBack" class="back-section" (click)="back()">BACK</div>
   <div class="logo-section"><img src="../assets/images/lexus-to-you-logo.png"/></div>
-  <div class="menu-section">MENU</div>
+  <div *ngIf="hasMenu" class="menu-section" (click)="menu()">MENU</div>
+  <div *ngIf="hasClose" class="close-section" (click)="close()">X</div>
 </div>

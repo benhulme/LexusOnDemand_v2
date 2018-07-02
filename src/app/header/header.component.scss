@@ -11,6 +11,9 @@
     position: absolute;
     left: 15px;
     top: 15px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   .logo-section {
     max-width: 100px;
@@ -18,10 +21,16 @@
     img {
       width: 100%;
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
-  .menu-section {
+  .menu-section, .close-section {
     position: absolute;
     right: 15px;
     top: 15px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

@@ -6,8 +6,8 @@
       </div>
       <div class="car-item-details">
         <p>{{ car.mainHeading }}</p>
-        <div class="view-car-features" (click)="selectCarModel(car.id)">See {{ car.shortModel }} Features</div>
-        <div class="select-car-btn">SELECT {{ car.model }}</div>
+        <div class="view-car-features" (click)="viewCarModelFeatures(car.id)">See {{ car.shortModel }} Features</div>
+        <div class="select-car-btn" (click)="selectCarModel(car.id)">SELECT {{ car.model }}</div>
       </div>
     </div>
   </div>
